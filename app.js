@@ -8,13 +8,9 @@ const app = express();
 
 app.use(express.json());
 
-// app.use((req, res, next) => {
-
-// })
-
 app.use('/', routes);
 
-const port = process.env.POR_API || 3001;
+const port = process.env.PORT;
 
 
 function initApp(){
